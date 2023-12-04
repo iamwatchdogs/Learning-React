@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 // Imported components
 import App from './App';
 import {LoremPara1, LoremPara2, AnotherApp} from './AnotherApp';
+import {BehindTheScenes} from './BehindTheScenes';
 
 // Note that Component identifier has Camel casing notion
 function MyFirstComponent() {
@@ -18,6 +19,7 @@ root.render(
     <AnotherApp />
     <LoremPara1 />
     <LoremPara2 />
+    <BehindTheScenes />
   </React.StrictMode>
 );
 
