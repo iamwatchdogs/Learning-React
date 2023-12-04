@@ -8,6 +8,7 @@ This is the repo that will act as a sandbox environment for me to get some hands
 
 | Sno. | Title | PR | Git Hash | comments (if any) |
 | :---: | :---: | :---: | :---: | :---: |
-| 0 | Initalized React framework | - | [dfac48b](../dfac48b) |  |
+| 0 | Initialized React framework | - | [dfac48b](../dfac48b) | - |
+| 1 | Component Basics | [#1](../../pull/1) | [8e23cda](../8e23cda) | basics about component, import/export, JSX syntax, Bable.js conversion |
 
 </div>
