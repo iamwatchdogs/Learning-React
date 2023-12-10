@@ -75,11 +75,52 @@ const UsingDirectValues = () => {
     );
 };
 
+// Arrow functions
+const consoleLogLorem = () => console.log(externalLorem);
+const returnLorem = () => externalLorem;
+
+const FunctionCalls = () => {
+    return (
+        <article className='function-calls'>
+            <section className='theory'>
+                <h2>Function Calls</h2>
+                <p>
+                    We can also call functions inside the jsx elements being
+                    returned. But for that we have to use curly braces for the
+                    jsx element to recoginize the elements as an expressions.
+                </p>
+                <p>
+                    Note that when we call the <code>consoleLogLorem()</code>
+                    function and totally normal, as the UI is being rendered
+                    in a StrictMode at the root. The StrictMode forces the 
+                    components to re-render to help developer find the bugs
+                    and defects. In further concepts, we will know the concepts
+                    of hooks and how to avoid dual function call for a single
+                    actual call.
+                </p>
+            </section>
+            <section className='example'>
+                <h3>For example:</h3>
+                <ul>
+                    <li>
+                        Calling <b>consoleLogLorem()</b>{" "}
+                        <i>*no return value*</i>: {consoleLogLorem()}
+                    </li>
+                    <li>
+                        Calling <b>returnLorem()</b>: {returnLorem()}
+                    </li>
+                </ul>
+            </section>
+        </article>
+    );
+};
+
 export default function Expressions() {
     return (
         <>
             <UsingVariables />
             <UsingDirectValues />
+            <FunctionCalls />
         </>
     );
 }
