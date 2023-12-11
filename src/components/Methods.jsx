@@ -107,6 +107,43 @@ const ForEach = () => {
     );
 };
 
+const Filter = () => {
+    return (
+        <section className='filter-method'>
+            <section className='theory'>
+                <h2>Filter method</h2>
+                <p>
+                    Filter method is used to filter out the items from the
+                    iterable object based on some condition. The condition
+                    checking will be done using a call back function containing
+                    <code>item</code> parameter and the filter method returns a 
+                    new list/array of filtred element. The filter method only filters
+                    and returns list of element, so we can chain the method with 
+                    <code>map</code> method to generate the required jsx.
+                </p>
+            </section>
+            <section className='example'>
+                <h3>For Example</h3>
+                <p>
+                    Here we are iterating over a list/array of object of some
+                    data and return only the details of the people who are 25 
+                    years of age or above.
+                </p>
+                <ul>
+                    {data
+                        .filter((item) => item.age >= 25)
+                        .map((item) => (
+                            <li key={item.id}>
+                                id: {item.id}, name: {item.name}, age:{" "}
+                                {item.age}
+                            </li>
+                        ))}
+                </ul>
+            </section>
+        </section>
+    );
+}
+
 export default function Methods() {
     return (
         <article className='methods'>
@@ -121,6 +158,7 @@ export default function Methods() {
             </section>
             <Map />
             <ForEach />
+            <Filter />
         </article>
     );
 }
