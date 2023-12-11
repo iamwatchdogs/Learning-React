@@ -1,4 +1,4 @@
-# Welcome to Learning-React Repo
+# Welcome to Learning-React Repo <a href="https://github.com/iamwatchdogs/Learning-React/actions/workflows/linter.yml"><img src="https://github.com/iamwatchdogs/Learning-React/actions/workflows/linter.yml/badge.svg" alt="linting workflow status" title="linting-status" align="right"></a>
 
 This is the repo that will act as a sandbox environment for me to get some hands-on learning for React Framework. Feel free to check my progress and suggest me through [GitHub Issues](../../issues). Please note that this repo is solely for **my** learning and no external contribution will be merged into this repo. I would really appreciate your work but I will not be merging any of your pull requests into this repo.
 
