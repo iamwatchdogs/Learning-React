@@ -116,9 +116,10 @@ const Filter = () => {
                     Filter method is used to filter out the items from the
                     iterable object based on some condition. The condition
                     checking will be done using a call back function containing
-                    <code>item</code> parameter and the filter method returns a 
-                    new list/array of filtred element. The filter method only filters
-                    and returns list of element, so we can chain the method with 
+                    <code>item</code> parameter and the filter method returns a
+                    new list/array of filtred element. The filter method only
+                    filters and returns list of element, so we can chain the
+                    method with
                     <code>map</code> method to generate the required jsx.
                 </p>
             </section>
@@ -126,7 +127,7 @@ const Filter = () => {
                 <h3>For Example</h3>
                 <p>
                     Here we are iterating over a list/array of object of some
-                    data and return only the details of the people who are 25 
+                    data and return only the details of the people who are 25
                     years of age or above.
                 </p>
                 <ul>
@@ -142,7 +143,44 @@ const Filter = () => {
             </section>
         </section>
     );
-}
+};
+
+const Reduce = () => {
+    return (
+        <section className='reduce'>
+            <section className='theory'>
+                <h2>Reduce Method</h2>
+                <p>
+                    Reduce method is similar to the filter method, but not in
+                    all ways. Reduce method is used to reduce the whole list of
+                    elements or array in a single computed result, the mode of
+                    computation can be any operation that requires accumulation
+                    of previous operation. Some of the common/simple example is
+                    performing sum of an array.
+                </p>
+            </section>
+            <section className='example'>
+                <h3>For Example</h3>
+                <p>
+                    Using reduce method we are going to find the average of all
+                    the people present in the data. And just to show to that the
+                    <code>reduce</code> method is not only for artihmetic operation,
+                    we will append all the name together
+                </p>
+                <ul>
+                    <li>
+                        Avg age of people in <code>data</code>:{' '}
+                        {data.reduce((acc, item) => acc + item.age, 0) / data.length}
+                    </li>
+                    <li>
+                        Names of all the people in <code>data</code>:{' '}
+                        {data.reduce((acc, item) => acc + item.name + ' ', '')}
+                    </li>
+                </ul>
+            </section>
+        </section>
+    );
+};
 
 export default function Methods() {
     return (
@@ -159,6 +197,7 @@ export default function Methods() {
             <Map />
             <ForEach />
             <Filter />
+            <Reduce />
         </article>
     );
 }
