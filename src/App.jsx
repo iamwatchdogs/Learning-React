@@ -1,13 +1,11 @@
-// Creating an Header component.
-function Header() {
-    return <h2>This is imported Header element</h2>;
-}
+import Expressions from "./components/Expressions";
+import Methods from "./components/Methods";
 
-// returning JSX present within Header component using Header component.
-function App() {
-    return <Header />;
+export default function App() {
+    return (
+        <>
+            <Expressions />
+            <Methods />
+        </>
+    );
 }
-
-// exporting App component so that other files can use the component.
-// we are exporting it using keyword `default` as App is the name of file itself.
-export default App;
