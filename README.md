@@ -10,5 +10,6 @@ This is the repo that will act as a sandbox environment for me to get some hands
 | :---: | :---: | :---: | :---: | :---: |
 | 0 | Initialized React framework | - | [dfac48b](../dfac48b) | - |
 | 1 | Component Basics | [#1](../../pull/1) | [8e23cda](../8e23cda) | basics about component, import/export, JSX syntax, Bable.js conversion |
+| 2 | Expressions and Methods | [#2](../../pull/2) | [e633dd0](../e633dd0) | usage of expressions and some of the commonly used methods |
 
 </div>
