@@ -182,6 +182,37 @@ const Reduce = () => {
     );
 };
 
+const Find = () => {
+    return (
+        <section className='find'>
+            <section className='theory'>
+                <h2>Find Method</h2>
+                <p>
+                    Find method is very similar to filter method as both of
+                    them return elements that satisy the condition which is
+                    provided in the form of call back function. The only 
+                    difference between them is that, Find method only returns
+                    single element, the one which statifies the condition first. 
+                </p>
+            </section>
+            <section className='example'>
+                <h3>For Example:</h3>
+                <p>
+                    Using find method, we find the first person the enrolled into 
+                    the <code>data</code> array <i>(assume that the indexing as the
+                    order people enrolled)</i> and who is 25 years old or above.
+                </p>
+                <ul>
+                    <li>
+                        First person who is 25 years old or above:{' '}
+                        {data.find((item) => item.age >= 25).name}
+                    </li>
+                </ul>
+            </section>
+        </section>
+    );
+}
+
 export default function Methods() {
     return (
         <article className='methods'>
@@ -198,6 +229,7 @@ export default function Methods() {
             <ForEach />
             <Filter />
             <Reduce />
+            <Find />
         </article>
     );
 }
