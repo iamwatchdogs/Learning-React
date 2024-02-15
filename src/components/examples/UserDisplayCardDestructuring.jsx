@@ -4,7 +4,7 @@ export default function UserDisplayCardDestructuring({ user, age, phoneno, email
         <h3>User Information:</h3>
         <p>Name: {user}</p>
         <p>Age: {age}</p>
-        <p>{phoneno}</p>
+        <p>Phone Number: {phoneno}</p>
         <p>Email Address: {email}</p>
       </div>
     );
