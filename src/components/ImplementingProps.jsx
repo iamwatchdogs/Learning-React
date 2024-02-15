@@ -1,4 +1,5 @@
 import DefaultUsageOfProps from "./DefaultUsageOfProps";
+import DestructuringProps from "./DestructuringProps";
 
 function Title() {
   return <h2>Introduction to Props</h2>;
@@ -44,6 +45,7 @@ export default function ImplementingProps() {
       <Title />
       <DescriptionForPropsInput />
       <DefaultUsageOfProps />
+      <DestructuringProps />
     </section>
   );
 }
