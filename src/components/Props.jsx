@@ -1,3 +1,5 @@
+import ImplementingProps from "./ImplementingProps";
+
 function Title() {
   return <h2>Introduction to Props</h2>;
 }
@@ -42,6 +44,7 @@ export default function Props() {
     <article id='props'>
       <Title />
       <Description />
+      <ImplementingProps />
     </article>
   );
 }
