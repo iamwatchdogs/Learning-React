@@ -37,7 +37,7 @@ function Example() {
       <p>Email Address: {props.email}</p>
     </div>
   );
-  }"`;
+  }`;
 
   return (
     <>

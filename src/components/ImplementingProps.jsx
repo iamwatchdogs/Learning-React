@@ -6,10 +6,10 @@ function Title() {
 
 function DescriptionForPropsInput() {
   const exampleInput = `<UserDisplayCard 
-  name={'"sam"'} 
-  age={'"23"'} 
-  phoneno={'"1234567980"'} 
-  email={'"sam.rocks.123@gmail.com"'} 
+  name={"sam"} 
+  age={"23"} 
+  phoneno={"1234567980"} 
+  email={"sam.rocks.123@gmail.com"} 
 />`;
 
   return (
