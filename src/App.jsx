@@ -1,11 +1,9 @@
-import Expressions from "./components/Expressions";
-import Methods from "./components/Methods";
+import { ClassComponent } from "./components/ClassComponent";
 
 export default function App() {
-    return (
-        <>
-            <Expressions />
-            <Methods />
-        </>
-    );
+  return (
+    <>
+      <ClassComponent />
+    </>
+  );
 }
