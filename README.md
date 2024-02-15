@@ -14,12 +14,19 @@ This is the repo that will act as a sandbox environment for me to get some hands
 
 </div>
 
-### Class Components
-
 <div align="center">
+<table>
+  <tr>
+    <td><div align="center"><h3>Class Components (Legacy Implementation)</h3></div></td>
+  </tr>
+  <tr>  
+    <td>
 
 | Sno. |              Title              |         PR         |       Git Hash        |         comments (if any)          |
 | :--: | :-----------------------------: | :----------------: | :-------------------: | :--------------------------------: |
 |  1   | Introduction to Class Component | [#3](../../pull/3) | [5210066](../5210066) | Basic intro about class components |
 
+  </td>
+  </tr>  
+</table>
 </div>
