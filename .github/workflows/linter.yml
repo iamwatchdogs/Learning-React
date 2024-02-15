@@ -3,6 +3,10 @@ name: "EsLinter"
 on:
   push:
     branches: [main] 
+    paths-ignore:
+      - .gitignore
+      - README.md
+      - LICENSE
   pull_request:
     paths-ignore:
       - .gitignore
