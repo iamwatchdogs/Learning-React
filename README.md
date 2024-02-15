@@ -6,10 +6,20 @@ This is the repo that will act as a sandbox environment for me to get some hands
 
 <div align="center">
 
-| Sno. | Title | PR | Git Hash | comments (if any) |
-| :---: | :---: | :---: | :---: | :---: |
-| 0 | Initialized React framework | - | [dfac48b](../dfac48b) | - |
-| 1 | Component Basics | [#1](../../pull/1) | [8e23cda](../8e23cda) | basics about component, import/export, JSX syntax, Bable.js conversion |
-| 2 | Expressions and Methods | [#2](../../pull/2) | [e633dd0](../e633dd0) | usage of expressions and some of the commonly used methods |
+| Sno. |            Title            |         PR         |       Git Hash        |                           comments (if any)                            |
+| :--: | :-------------------------: | :----------------: | :-------------------: | :--------------------------------------------------------------------: |
+|  0   | Initialized React framework |         -          | [dfac48b](../dfac48b) |                                   -                                    |
+|  1   |      Component Basics       | [#1](../../pull/1) | [8e23cda](../8e23cda) | basics about component, import/export, JSX syntax, Bable.js conversion |
+|  2   |   Expressions and Methods   | [#2](../../pull/2) | [e633dd0](../e633dd0) |       usage of expressions and some of the commonly used methods       |
+
+</div>
+
+### Class Components
+
+<div align="center">
+
+| Sno. |              Title              |         PR         |   Git Hash    |         comments (if any)          |
+| :--: | :-----------------------------: | :----------------: | :-----------: | :--------------------------------: |
+|  1   | Introduction to Class Component | [#3](../../pull/3) | [placeholder] | Basic intro about class components |
 
 </div>
