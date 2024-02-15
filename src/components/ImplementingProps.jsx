@@ -1,5 +1,4 @@
-import UserDisplayCardProps from "./examples/UserDisplayCardProps";
-import UserDisplayCardDestructuring from "./examples/UserDisplayCardDestructuring";
+import DefaultUsageOfProps from "./DefaultUsageOfProps";
 
 function Title() {
   return <h2>Introduction to Props</h2>;
@@ -44,6 +43,7 @@ export default function ImplementingProps() {
     <section id='implementation'>
       <Title />
       <DescriptionForPropsInput />
+      <DefaultUsageOfProps />
     </section>
   );
 }
