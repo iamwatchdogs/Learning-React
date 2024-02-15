@@ -1,4 +1,4 @@
-import ImplementingProps from "./ImplementingProps";
+import ImplementingProps from "./props-components/ImplementingProps";
 
 function Title() {
   return <h2>Introduction to Props</h2>;
