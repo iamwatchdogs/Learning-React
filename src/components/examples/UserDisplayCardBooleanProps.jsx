@@ -3,7 +3,7 @@ export default function UserDisplayCardWithDefaultValues({
   age = 18,
   phoneno = "1234567890",
   email = "guest@info.com",
-  isMarried
+  isMarried,
 }) {
   return (
     <div>
@@ -12,7 +12,7 @@ export default function UserDisplayCardWithDefaultValues({
       <p>Age: {age}</p>
       <p>Phone Number: {phoneno}</p>
       <p>Email Address: {email}</p>
-	  <p>Is Married: {isMarried ? "Yes" : "No"}</p>
+      <p>Is Married: {isMarried ? "Yes" : "No"}</p>
     </div>
   );
 }
