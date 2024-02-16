@@ -1,10 +1,14 @@
 import ImplementingProps from "./props-components/ImplementingProps";
+import DefaultValueProps from "./props-components/DefaultValueProps";
+import BooleanProps from "./props-components/BooleanProps";
+import UsingSpreadOperator from "./props-components/UsingSpreadOperator";
+import AccessingChildernThroughProps from "./props-components/AccessingChildernThroughProps";
 
-function Title() {
+function IntroductionTitle() {
   return <h2>Introduction to Props</h2>;
 }
 
-function Description() {
+function IntroductionDescription() {
   return (
     <>
       <p>
@@ -42,9 +46,19 @@ function Description() {
 export default function Props() {
   return (
     <article id='props'>
-      <Title />
-      <Description />
-      <ImplementingProps />
+      <h1>Props</h1>
+      <section id='introduction'>
+        <IntroductionTitle />
+        <IntroductionDescription />
+        <ImplementingProps />
+      </section>
+      <section id='additonal-topics'>
+        <h2>Additional Topics</h2>
+        <DefaultValueProps />
+        <BooleanProps />
+        <UsingSpreadOperator />
+        <AccessingChildernThroughProps />
+      </section>
     </article>
   );
 }
