@@ -41,11 +41,9 @@ function Example() {
 
   return (
     <>
-      <p>
-        <pre>
-          <code>{examplePropsComponent}</code>
-        </pre>
-      </p>
+      <pre>
+        <code>{examplePropsComponent}</code>
+      </pre>
       <p>Thus, the output of above example</p>
       <UserDisplayCardProps
         user='sam'

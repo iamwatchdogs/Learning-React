@@ -30,11 +30,9 @@ function DescriptionForPropsInput() {
         <i>email</i> for a given user on the profile. Then we can pass the props
         as following,
       </p>
-      <p>
-        <pre>
-          <code>{exampleInput}</code>
-        </pre>
-      </p>
+      <pre>
+        <code>{exampleInput}</code>
+      </pre>
     </>
   );
 }
