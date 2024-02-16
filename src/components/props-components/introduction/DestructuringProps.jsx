@@ -55,12 +55,10 @@ function Example() {
 
 function EndNote() {
   return (
-    <>
-      <p>
-        As you can see it way more better to write and easy follow without
-        changing the output.
-      </p>
-    </>
+    <p>
+      As you can see it way more better to write and easy follow without
+      changing the output.
+    </p>
   );
 }
 

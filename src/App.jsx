@@ -1,4 +1,4 @@
-import PropsAndPropTypes from "./components/PropsAndPropTypes";
+import PropsAndPropTypes from "./PropsAndPropTypes";
 
 export default function App() {
   return <PropsAndPropTypes />;
