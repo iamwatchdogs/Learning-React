@@ -1,4 +1,4 @@
-import UserDisplayCardDestructuring from "../examples/UserDisplayCardDestructuring";
+import UserDisplayCardDestructuring from "../../examples/UserDisplayCardDestructuring";
 
 function Description() {
   return (

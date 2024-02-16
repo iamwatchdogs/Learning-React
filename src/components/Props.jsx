@@ -1,8 +1,8 @@
-import ImplementingProps from "./props-components/ImplementingProps";
-import DefaultValueProps from "./props-components/DefaultValueProps";
-import BooleanProps from "./props-components/BooleanProps";
-import UsingSpreadOperator from "./props-components/UsingSpreadOperator";
-import AccessingChildernThroughProps from "./props-components/AccessingChildernThroughProps";
+import ImplementingProps from "./props-components/introduction/ImplementingProps";
+import DefaultValueProps from "./props-components/additional-topics/DefaultValueProps";
+import BooleanProps from "./props-components/additional-topics/BooleanProps";
+import UsingSpreadOperator from "./props-components/additional-topics/UsingSpreadOperator";
+import AccessingChildernThroughProps from "./props-components/additional-topics/AccessingChildernThroughProps";
 
 function IntroductionTitle() {
   return <h2>Introduction to Props</h2>;
