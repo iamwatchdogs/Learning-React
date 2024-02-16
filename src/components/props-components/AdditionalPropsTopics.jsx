@@ -16,15 +16,23 @@ function AdditionalTopicsDescription() {
   );
 }
 
+function AdditionalTopics() {
+  return (
+    <>
+      <DefaultValueProps />
+      <BooleanProps />
+      <UsingSpreadOperator />
+      <AccessingChildernThroughProps />
+    </>
+  );
+}
+
 export default function AdditionalPropsTopics() {
   return (
     <section id='additonal-topics'>
       <AdditionalTopicsTitle />
       <AdditionalTopicsDescription />
-      <DefaultValueProps />
-      <BooleanProps />
-      <UsingSpreadOperator />
-      <AccessingChildernThroughProps />
+      <AdditionalTopics />
     </section>
   );
 }

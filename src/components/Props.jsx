@@ -2,9 +2,13 @@ import IntroductionToProps from "./props-components/IntroductionToProps";
 import AdditionalPropsTopics from "./props-components/AdditionalPropsTopics";
 
 export default function Props() {
+  function Title() {
+    return <h1>Props</h1>;
+  }
+
   return (
     <article id='props'>
-      <h1>Props</h1>
+      <Title />
       <IntroductionToProps />
       <AdditionalPropsTopics />
     </article>

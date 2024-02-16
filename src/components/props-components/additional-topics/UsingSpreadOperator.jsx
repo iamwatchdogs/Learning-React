@@ -33,9 +33,6 @@ function Description() {
 }
 
 function Example() {
-  const withoutSpreadOperatorExample = `<UserDisplayCard user='sammy' age={21} phoneno={1234567980} email='sam.rocks.123@gmail.com' isMarried/>`;
-  const withSpreadOperatorExample = `<UserDisplayCard {...data}/>`;
-
   const data = {
     user: "sammy",
     age: 21,
@@ -45,44 +42,64 @@ function Example() {
   };
   const dataObjectDeclaration = `const data = ${JSON.stringify(data, null, 2)}`;
 
+  function ExampleWithoutSpreadOperator() {
+    const withoutSpreadOperatorExample = `<UserDisplayCard user='sammy' age={21} phoneno={1234567980} email='sam.rocks.123@gmail.com' isMarried/>`;
+
+    return (
+      <>
+        <p>Let{"'"}s take an example from previous component.</p>
+        <pre>
+          <code>{withoutSpreadOperatorExample}</code>
+        </pre>
+        <UserDisplayCardBooleanProps
+          user='sammy'
+          age={21}
+          phoneno={1234567980}
+          email='sam.rocks.123@gmail.com'
+          isMarried
+        />
+      </>
+    );
+  }
+
+  function ExampleWithSpreadOperator() {
+    const withSpreadOperatorExample = `<UserDisplayCard {...data}/>`;
+
+    return (
+      <>
+        <p>
+          As you can see things get a bit messy when there are many properties
+          in it. to achieve the same thing with spread opeartor let{"'"}s
+          declare a object filled with valid data.
+        </p>
+        <pre>
+          <code>{dataObjectDeclaration}</code>
+        </pre>
+        <p>
+          Now that we got our data, let{"'"}s see how we can use spread operator
+        </p>
+        <pre>
+          <code>{withSpreadOperatorExample}</code>
+        </pre>
+        <UserDisplayCardBooleanProps {...data} />
+        <p>
+          As you can see, we have used the spread operator to pass the data
+          object to the component. This will automatically assign the respective
+          props to the component.
+        </p>
+        <p>
+          Same output with little efforts, also this comes really handy when we
+          try to create components passing the data from an external resource
+          and something more dynamic like APIs.
+        </p>
+      </>
+    );
+  }
+
   return (
     <>
-      <p>Let{"'"}s take an example from previous component.</p>
-      <pre>
-        <code>{withoutSpreadOperatorExample}</code>
-      </pre>
-      <UserDisplayCardBooleanProps
-        user='sammy'
-        age={21}
-        phoneno={1234567980}
-        email='sam.rocks.123@gmail.com'
-        isMarried
-      />
-      <p>
-        As you can see things get a bit messy when there are many properties in
-        it. to achieve the same thing with spread opeartor let{"'"}s declare a
-        object filled with valid data.
-      </p>
-      <pre>
-        <code>{dataObjectDeclaration}</code>
-      </pre>
-      <p>
-        Now that we got our data, let{"'"}s see how we can use spread operator
-      </p>
-      <pre>
-        <code>{withSpreadOperatorExample}</code>
-      </pre>
-      <UserDisplayCardBooleanProps {...data} />
-      <p>
-        As you can see, we have used the spread operator to pass the data object
-        to the component. This will automatically assign the respective props to
-        the component.
-      </p>
-      <p>
-        Same output with little efforts, also this comes really handy when we
-        try to create components passing the data from an external resource and
-        something more dynamic like APIs.
-      </p>
+      <ExampleWithoutSpreadOperator />
+      <ExampleWithSpreadOperator />
     </>
   );
 }
