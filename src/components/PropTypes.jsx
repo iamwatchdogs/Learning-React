@@ -24,6 +24,17 @@ function Desciption() {
         PropTypes, because PropTypes were only meant to act only as a
         placeholder for type checking using Typescript or flow.
       </p>
+      <p>
+        Note that the PropTypes is completly optional but one the best practise
+        that can help you write highly debuggable application. This is the
+        reason why in I have updated the eslinter{"'"}s config to ignore the
+        typechecking using prop-types.
+      </p>
+      <p>
+        Also note that these PropTypes will not terimate or break you
+        application in any way possible, they will only act as an warning that
+        is help you less buddy code for you application.
+      </p>
     </>
   );
 }
