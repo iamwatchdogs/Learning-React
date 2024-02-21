@@ -1,4 +1,5 @@
 import Props from './components/Props';
+import PropTypes from './components/PropTypes';
 
 function Header() {
   return (
@@ -27,6 +28,7 @@ export default function PropsAndPropTypes() {
     <>
       <Header />
       <Main />
+      <PropTypes />
     </>
   );
 }
