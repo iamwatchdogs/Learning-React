@@ -1,3 +1,5 @@
+import PropTypesImplementation from "./proptypes-components/PropTypesImplementation";
+
 function Header() {
   return <h2>PropTypes</h2>;
 }
@@ -19,6 +21,7 @@ export default function PropTypes() {
     <>
       <Header />
       <Desciption />
+      <PropTypesImplementation />
     </>
   );
 }
