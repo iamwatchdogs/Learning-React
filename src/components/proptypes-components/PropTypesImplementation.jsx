@@ -70,11 +70,21 @@ function Description() {
           There many types through which you can specify the props used/passed
           to the component. You can find the list of all the types in the
           official page of{" "}
-          <a href='https://legacy.reactjs.org/docs/typechecking-with-proptypes.html'>
+          <a
+            href='https://legacy.reactjs.org/docs/typechecking-with-proptypes.html'
+            target='_blank'
+            rel='noreferrer'
+          >
             React Legacy
           </a>{" "}
           or npm page of{" "}
-          <a href='https://www.npmjs.com/package/prop-types'>prop-types</a>{" "}
+          <a
+            href='https://www.npmjs.com/package/prop-types'
+            target='_blank'
+            rel='noreferrer'
+          >
+            prop-types
+          </a>{" "}
           module.
         </p>
       </>
