@@ -1,9 +1,5 @@
-import { ClassComponent } from "./components/ClassComponent";
+import PropsAndPropTypes from "./PropsAndPropTypes";
 
 export default function App() {
-  return (
-    <>
-      <ClassComponent />
-    </>
-  );
+  return <PropsAndPropTypes />;
 }
