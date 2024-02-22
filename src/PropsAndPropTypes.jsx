@@ -1,5 +1,5 @@
-import Props from './components/Props';
-import PropTypes from './components/PropTypes';
+import Props from "./components/Props";
+import PropTypes from "./components/PropTypes";
 
 function Header() {
   return (
@@ -19,6 +19,7 @@ function Main() {
   return (
     <main>
       <Props />
+      <PropTypes />
     </main>
   );
 }
@@ -28,7 +29,6 @@ export default function PropsAndPropTypes() {
     <>
       <Header />
       <Main />
-      <PropTypes />
     </>
   );
 }
