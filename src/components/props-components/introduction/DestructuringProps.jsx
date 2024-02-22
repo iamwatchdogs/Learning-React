@@ -47,9 +47,17 @@ function Example() {
   }`;
 
   return (
-    <pre>
-      <code>{example}</code>
-    </pre>
+    <>
+      <pre>
+        <code>{example}</code>
+      </pre>
+      <UserDisplayCardDestructuring
+        user='sam'
+        age={23}
+        phoneno={1234567980}
+        email='sam.rocks.123@gmail.com'
+      />
+    </>
   );
 }
 
@@ -67,12 +75,6 @@ export default function DestructuringProps() {
     <>
       <Description />
       <Example />
-      <UserDisplayCardDestructuring
-        user='sam'
-        age={23}
-        phoneno={1234567980}
-        email='sam.rocks.123@gmail.com'
-      />
       <EndNote />
     </>
   );
