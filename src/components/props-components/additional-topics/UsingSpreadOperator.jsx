@@ -1,5 +1,7 @@
-import UserDisplayCardBooleanProps from "../../examples/UserDisplayCardBooleanProps";
-import UserDisplayCardWithSpreadOperator from "../../examples/UserDisplayCardWithSpreadOperator";
+import {
+  UserDisplayCardBooleanProps,
+  UserDisplayCardWithSpreadOperator,
+} from "../../examples/UserDisplayCard";
 
 function Title() {
   return <h3>Using Spread Operator</h3>;

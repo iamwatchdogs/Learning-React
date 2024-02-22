@@ -1,4 +1,4 @@
-import UserDisplayCardProps from "../../examples/UserDisplayCardProps";
+import { UserDisplayCardProps } from "../../examples/UserDisplayCard";
 
 function Description() {
   return (

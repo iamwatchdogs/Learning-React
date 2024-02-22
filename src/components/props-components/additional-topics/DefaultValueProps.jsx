@@ -1,5 +1,7 @@
-import UserDisplayCardConsoleLog from "../../examples/UserDisplayCardConsoleLog";
-import UserDisplayCardWithDefaultValues from "../../examples/UserDisplayCardWithDefaultValues";
+import {
+  UserDisplayCardConsoleLog,
+  UserDisplayCardWithDefaultValues,
+} from "../../examples/UserDisplayCard";
 
 function Title() {
   return <h3>Default value Props</h3>;

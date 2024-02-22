@@ -1,5 +1,5 @@
 import SampleExample from "./SampleExample";
-import UserDisplayPropTypes from "../examples/UserDisplayCardPropTypes";
+import { UserDisplayCardPropTypes } from "../examples/UserDisplayCard";
 
 function Title() {
   return <h3>Implementation</h3>;
@@ -144,7 +144,7 @@ function Example() {
   function ActualExample() {
     const updatedCompnent = `import PropTypes from "prop-types";
   
-function UserDisplayPropTypes({
+function UserDisplayCard({
   user = "Guest",
   age = 18,
   phoneno = "1234567890",
@@ -172,17 +172,17 @@ function UserDisplayPropTypes({
   );
 }
 
-UserDisplayPropTypes.propTypes = {
+UserDisplayCard.propTypes = {
   user: PropTypes.string.isRequired,
   age: PropTypes.number.isRequired,
   phoneno: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   email: PropTypes.string.isRequired,
 };
 
-export default UserDisplayPropTypes;
+export default UserDisplayCard;
 `;
 
-    const wrongTypesExample = `<UserDisplayPropTypes user={21} age="21 savage" phoneno={null}/>`;
+    const wrongTypesExample = `<UserDisplayCard user={21} age="21 savage" phoneno={null}/>`;
 
     return (
       <>
@@ -193,7 +193,7 @@ export default UserDisplayPropTypes;
         <pre>
           <code>{updatedCompnent}</code>
         </pre>
-        <UserDisplayPropTypes />
+        <UserDisplayCardPropTypes />
         <p>
           That{"'"}s great, now let{"'"}s try it out with wrong type to see
           whether proptypes are working or not.
@@ -201,14 +201,14 @@ export default UserDisplayPropTypes;
         <pre>
           <code>{wrongTypesExample}</code>
         </pre>
-        <UserDisplayPropTypes user={21} age='21 savage' phoneno={null} />
+        <UserDisplayCardPropTypes user={21} age='21 savage' phoneno={null} />
         <p>Now, you see the warning in your console</p>
       </>
     );
   }
 
   function OptionalTypeCheckingExample() {
-    const updatedPropTypes = `UserDisplayPropTypes.propTypes = {
+    const updatedPropTypes = `UserDisplayCard.propTypes = {
   user: PropTypes.string.isRequired,
   age: PropTypes.number.isRequired,
   phoneno: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,

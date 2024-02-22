@@ -1,4 +1,4 @@
-import UserDisplayCardBoolean from "../../examples/UserDisplayCardBooleanProps";
+import { UserDisplayCardBooleanProps } from "../../examples/UserDisplayCard";
 
 function Title() {
   return <h3>Boolean props</h3>;
@@ -61,7 +61,7 @@ function Example() {
       <pre>
         <code>{longFormExample}</code>
       </pre>
-      <UserDisplayCardBoolean isMarried={true} />
+      <UserDisplayCardBooleanProps isMarried={true} />
       <p>
         Now instead of writting this long, we just specify the props and it does
         the same.
@@ -69,7 +69,7 @@ function Example() {
       <pre>
         <code>{shortHandExample}</code>
       </pre>
-      <UserDisplayCardBoolean isMarried />
+      <UserDisplayCardBooleanProps isMarried />
       <p>
         Now that we know, it work both ways let{"'"}s see whether not mentioning
         at all acts as <code>false</code> or not.
@@ -77,7 +77,7 @@ function Example() {
       <pre>
         <code>{falseConditionCheckExample}</code>
       </pre>
-      <UserDisplayCardBoolean />
+      <UserDisplayCardBooleanProps />
     </>
   );
 }

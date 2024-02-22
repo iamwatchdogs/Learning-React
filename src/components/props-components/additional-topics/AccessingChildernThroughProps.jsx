@@ -1,5 +1,5 @@
 import UserList from "../../examples/UserList";
-import UserDisplayCardBooleanProps from "../../examples/UserDisplayCardBooleanProps";
+import { UserDisplayCardBooleanProps } from "../../examples/UserDisplayCard";
 
 function Title() {
   return <h3>Accessing Children Through Props</h3>;
