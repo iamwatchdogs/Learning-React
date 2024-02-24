@@ -1,7 +1,7 @@
 import React from "react";
-import Introduction from "./Introduction";
-import DefaultValue from "./DefaultValue";
-import PropTypesInClassComponent from './PropTypesInClassComponent';
+import Introduction from "./components/Introduction";
+import DefaultValue from "./components/DefaultValue";
+import PropTypesInClassComponent from "./components/PropTypesInClassComponent";
 
 export default class PropsAndPropTypesInClassComponents extends React.Component {
   render() {
