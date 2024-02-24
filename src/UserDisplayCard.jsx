@@ -35,4 +35,18 @@ class UserDisplayCardWithStaticDefaultPropValues extends UserDisplayCard {
   };
 }
 
-export { UserDisplayCard, UserDisplayCardWithStaticDefaultPropValues };
+class UserDisplayCardWithDefaultPropValues extends UserDisplayCard {
+}
+
+UserDisplayCardWithDefaultPropValues.defaultProps = {
+  user: "Guest",
+  age: 18,
+  phoneno: "1234567890",
+  email: "guest@info.com",
+};
+
+export {
+  UserDisplayCard,
+  UserDisplayCardWithStaticDefaultPropValues,
+  UserDisplayCardWithDefaultPropValues,
+};
