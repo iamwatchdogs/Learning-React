@@ -1,6 +1,7 @@
 import React from "react";
 import Introduction from "./Introduction";
 import DefaultValue from "./DefaultValue";
+import PropTypesInClassComponent from './PropTypesInClassComponent';
 
 export default class PropsAndPropTypesInClassComponents extends React.Component {
   render() {
@@ -8,6 +9,7 @@ export default class PropsAndPropTypesInClassComponents extends React.Component 
       <>
         <Introduction />
         <DefaultValue />
+        <PropTypesInClassComponent />
       </>
     );
   }
