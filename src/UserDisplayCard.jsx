@@ -26,4 +26,13 @@ class UserDisplayCard extends React.Component {
   }
 }
 
-export { UserDisplayCard };
+class UserDisplayCardWithStaticDefaultPropValues extends UserDisplayCard {
+  static defaultProps = {
+    user: "Guest",
+    age: 18,
+    phoneno: "1234567890",
+    email: "guest@info.com",
+  };
+}
+
+export { UserDisplayCard, UserDisplayCardWithStaticDefaultPropValues };
