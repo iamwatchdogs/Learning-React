@@ -1,4 +1,69 @@
 import React from "react";
+import { UserDisplayCard } from "./UserDisplayCard";
+
+class Example extends React.Component {
+  render() {
+    const userDisplayCardAsClassComponent = `import React from "react";
+
+export default class UserDisplayCard extends React.Component {
+  render() {
+    const { user, age, phoneno, email, isMarried, ...additionalData } = this.props;
+
+    return (
+      <div>
+        <h3>User Information:</h3>
+        <p>Name: {user}</p>
+        <p>Age: {age}</p>
+        <p>Phone Number: {phoneno}</p>
+        <p>Email Address: {email}</p>
+        <p>Is Married: {isMarried ? "Yes" : "No"}</p>
+        {Object.keys(additionalData).map((key, id) => {
+          const value = additionalData[key];
+          return (
+            <p key={id}>
+              {key}: {value}
+            </p>
+          );
+        })}
+      </div>
+    );
+  }
+}
+`;
+
+    const instanceOFUserDisplayCard = `<UserDisplayCard user="sammy" age={27} email="sammy.rocks.123@gmail.com" isMarried role="Developer"/>`;
+    return (
+      <>
+        <p>
+          Let{"'"}s take an example and rewrite the <code>UserDisplayCard</code>{" "}
+          component into a class component.
+        </p>
+        <pre>
+          <code>{userDisplayCardAsClassComponent}</code>
+        </pre>
+        <p>
+          And when we create an instance of this class component, with some
+          sample props, we get...
+        </p>
+        <pre>
+          <code>{instanceOFUserDisplayCard}</code>
+        </pre>
+        <UserDisplayCard
+          user='sammy'
+          age={27}
+          email='sammy.rocks.123@gmail.com'
+          isMarried
+          role='Developer'
+        />
+        <p>
+          I have destructured the props within the <code>render()</code> method
+          as we haven{"'"}t discussed about the <code>componentDidMount()</code>{" "}
+          method yet.
+        </p>
+      </>
+    );
+  }
+}
 
 export default class Introduction extends React.Component {
   render() {
@@ -30,6 +95,7 @@ export default class Introduction extends React.Component {
     return (
       <section id='introduction'>
         <Description />
+        <Example />
       </section>
     );
   }
