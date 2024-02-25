@@ -1,33 +1,23 @@
-# Welcome to Learning-React Repo <a href="https://github.com/iamwatchdogs/Learning-React/actions/workflows/linter.yml"><img src="https://github.com/iamwatchdogs/Learning-React/actions/workflows/linter.yml/badge.svg" alt="linting workflow status" title="linting-status" align="right"></a>
+# Welcome to Learning-React Repo
 
 This is the repo that will act as a sandbox environment for me to get some hands-on learning for React Framework. Feel free to check my progress and suggest me through [GitHub Issues](../../issues). Please note that this repo is solely for **my** learning and no external contribution will be merged into this repo. I would really appreciate your work but I will not be merging any of your pull requests into this repo.
 
-## My Progress
+## Props and PropTypes Class Components (Legacy Implementation)
 
-<div align="center">
+In the topic of Props and PropTypes for Class Components, I had some good hands-on experience on the following topics:
 
-| Sno. |            Title            |         PR         |               Git Hash                |                           comments (if any)                            |
-| :--: | :-------------------------: | :----------------: | :-----------------------------------: | :--------------------------------------------------------------------: |
-|  0   | Initialized React framework |         -          |         [dfac48b](../dfac48b)         |                                   -                                    |
-|  1   |      Component Basics       | [#1](../../pull/1) |         [8e23cda](../8e23cda)         | basics about component, import/export, JSX syntax, Bable.js conversion |
-|  2   |   Expressions and Methods   | [#2](../../pull/2) | [e633dd0](../Expressions-and-Methods) |       usage of expressions and some of the commonly used methods       |
-|  3   |     Props and PropTypes     | [#4](../../pull/4) |   [05f51cb](../Props-and-PropTypes)   |     understand the concept & implementation of props and proptypes     |
+- [x] How Props are implemented in Class Components?
+- [x] Differences and Similarities between Props implementation in both Class Components and Functional Components.
+- [x] Destructuring Props in Class Components.
+  - Within `render()` method.
+  - Using `componentDidMount()` method.
+- [x] Setting Default Props Values. 
+  - Defining `defaultProps` as a static property within the class component.
+  - Defining `defaultProps` after the class component has been defined.
+- [x] PropTypes are implemented exactly as the functional components.
 
-</div>
+## Refactoring Notes
 
-<div align="center">
-<table>
-  <tr>
-    <td><div align="center"><h3>Class Components (Legacy Implementation)</h3></div></td>
-  </tr>
-  <tr>  
-    <td>
+- Refactored all the components into the directory: [7f3ea10](../commit/7f3ea10)
 
-| Sno. |              Title              |         PR         |                    Git Hash                    |         comments (if any)          |
-| :--: | :-----------------------------: | :----------------: | :--------------------------------------------: | :--------------------------------: |
-|  1   | Introduction to Class Component | [#3](../../pull/3) | [5210066](../Introduction-to-Class-Components) | Basic intro about class components |
-
-  </td>
-  </tr>  
-</table>
-</div>
+  > Moved all the indirectly used component into the `components` directory
