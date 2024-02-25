@@ -4,6 +4,15 @@ This is the repo that will act as a sandbox environment for me to get some hands
 
 ## My Progress
 
+<table>
+<!-- -->
+<tr>
+<td>
+<div align="center"><h3>Functional Components</h3></div>
+</td>
+</tr>
+<tr>
+<td>
 <div align="center">
 
 | Sno. |            Title            |         PR         |               Git Hash                |                           comments (if any)                            |
@@ -14,21 +23,25 @@ This is the repo that will act as a sandbox environment for me to get some hands
 |  3   |     Props and PropTypes     | [#4](../../pull/4) |   [05f51cb](../Props-and-PropTypes)   |     understand the concept & implementation of props and proptypes     |
 
 </div>
+</td>
+</tr>
 
+<!-- -->
+<tr>
+<td>
+<div align="center"><h3>Class Components (Legacy Implementation)</h3></div>
+</td>
+</tr>
+<tr>
+<td>
 <div align="center">
-<table>
-  <tr>
-    <td><div align="center"><h3>Class Components (Legacy Implementation)</h3></div></td>
-  </tr>
-  <tr>  
-    <td>
 
 | Sno. |                 Title                  |         PR         |                      Git Hash                      |                 comments (if any)                 |
 | :--: | :------------------------------------: | :----------------: | :------------------------------------------------: | :-----------------------------------------------: |
 |  1   |    Introduction to Class Component     | [#3](../../pull/3) |   [5210066](../Introduction-to-Class-Components)   |        Basic intro about class components         |
 |  2   | Props and PropTypes in Class Component | [#5](../../pull/5) | [1527421](../Props-and-PropTypes-Class-Components) | Understood differences in implementation of props |
 
-  </td>
-  </tr>  
-</table>
 </div>
+</td>
+</tr>
+</table>
