@@ -1,5 +1,9 @@
-import PropsAndPropTypes from "./PropsAndPropTypes";
+import PropsAndPropTypesInClassComponents from "./PropsAndPropTypesInClassComponents";
 
 export default function App() {
-  return <PropsAndPropTypes />;
+  return (
+    <>
+      <PropsAndPropTypesInClassComponents />
+    </>
+  );
 }
